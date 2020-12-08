@@ -81,43 +81,43 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
+/***/ "./src/css/main.css":
+/*!**************************!*\
+  !*** ./src/css/main.css ***!
+  \**************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/css/main.css?");
+
+/***/ }),
+
+/***/ "./src/js/index.js":
+/*!*************************!*\
+  !*** ./src/js/index.js ***!
+  \*************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_my__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/my */ \"./src/modules/my.js\");\n/* harmony import */ var _modules_my_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/my.css */ \"./src/modules/my.css\");\n/* harmony import */ var _modules_my_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_my_css__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nObject(_modules_my__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\nconsole.log('hello Webpack!!');\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _my_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./my.js */ \"./src/js/my.js\");\n/* harmony import */ var _css_main_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/main.css */ \"./src/css/main.css\");\n/* harmony import */ var _css_main_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_main_css__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nObject(_my_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\nconsole.log('hello Webpack!!');\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ }),
 
-/***/ "./src/modules/my.css":
-/*!****************************!*\
-  !*** ./src/modules/my.css ***!
-  \****************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/modules/my.css?");
-
-/***/ }),
-
-/***/ "./src/modules/my.js":
-/*!***************************!*\
-  !*** ./src/modules/my.js ***!
-  \***************************/
+/***/ "./src/js/my.js":
+/*!**********************!*\
+  !*** ./src/js/my.js ***!
+  \**********************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (() => {\n  console.log('this is module');\n});\n\n\n//# sourceURL=webpack:///./src/modules/my.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (() => {\n  console.log('this is module');\n});\n\n\n//# sourceURL=webpack:///./src/js/my.js?");
 
 /***/ })
 
