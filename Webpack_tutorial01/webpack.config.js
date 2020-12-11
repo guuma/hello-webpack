@@ -2,6 +2,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const loader = require('sass-loader');
 
 module.exports = {
   mode: 'development',
@@ -13,6 +14,15 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.ts|\.tsx/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: 'ts-loader'
+          }
+        ]
+      },
       {
         test: /\.css|\.sass|\.scss/,
         use: [

@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactDom from 'react-dom';
+import Alert from './Alert.tsx'
 
 const App = () => {
-  return <div>Hello, React App!</div>;
+  return (
+  <div style={{color: '#000'}}>
+    Hello, React App!
+    <Alert message="Success!"/>
+  </div>
+  );
 };
 
 const reactRoot = document.getElementById('react-root');
