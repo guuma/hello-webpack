@@ -6,8 +6,16 @@
     <title>Hello Pug!</title>
   <link href="./css/main.css" rel="stylesheet"></head>
   <body>
-    <div><a href="/index.html">index.html</a><a href="/access.html">access.html</a><a href="/members/huga.html">huga.html</a></div>
-    <h1>Hello, Pug!</h1>
-    <div id="react-root"></div><img src="img/icon.png" alt="icon image"><img src="img/thumbnail.jpg" alt="thumnail image">
+    <div class="container">
+      <div class="menu">
+        <div class="menu__item"><a href="/index.html">index.html</a></div>
+        <div class="menu__item"><a href="/access.html">access.html</a></div>
+        <div class="menu__item"><a href="/members/huga.html">huga.html</a></div>
+      </div>
+      <h1>Hello, Pug!</h1>
+      <div id="react-root"></div>
+      <div class="main-image"><img class="icon" src="/img/icon.png"></div>
+      <div class="footer">Webpack Cource</div>
+    </div>
   <script type="text/javascript" src="./js/index.js"></script></body>
 </html>
