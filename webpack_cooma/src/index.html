@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>COOMA Cafe</title>
+    <meta name="description" content="This site is a test site." />
+    <link rel="icon" href="images/favicon.svg" />
+    <!-- <link rel="stylesheet" href="styles/loader.css" /> -->
+    <!-- <script src="scripts/vendors/pace.js"></script> -->
+    <!-- <link rel="stylesheet" href="styles/vendors/bootstrap-reboot.css" />
+    <link rel="stylesheet" href="styles/vendors/swiper.min.css" /> -->
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+  </head>
+  <body>
+    <div id="global-container">
+      <div id="container">
+        <div class="mobile-menu__cover"></div>
+        <div class="nav-trigger"></div>
+        <header class="header">
+          <div class="header__inner appear up">
+            <div class="logo item">
+              <img class="logo__img" src="<%= require('./images/logo.png') %>" alt="" />
+            </div>
+            <nav class="header__nav">
+              <ul class="header__ul">
+                <li class="header__li item"><a href="#">CONCEPT</a></li>
+                <li class="header__li item"><a href="#">MENU</a></li>
+                <li class="header__li item"><a href="#">ACCESS</a></li>
+              </ul>
+            </nav>
+            <button class="mobile-menu__btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </header>
+        <div id="content">
+          <div class="hero">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="hero__title">Enjoy Rich</div>
+                  <img src="<%= require('./images/image-1.jpeg') %>" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title">Fantastic</div>
+                  <img src="<%= require('./images/image-2.jpeg') %>" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title">Experience</div>
+                  <img src="<%= require('./images/image-3.jpeg') %>" alt="" />
+                </div>
+              </div>
+              <div class="hero__footer">
+                <img class="hero__downarrow" src="<%= require('./images/arrow.svg') %>" />
+                <span class="hero__scrolltext">scroll</span>
+              </div>
+            </div>
+          </div>
+          <div id="main-content">
+            <aside class="side left">
+              <div class="side__inner">
+                <a class="twitter icon" href="#">Twitter</a>
+                <a class="facebook icon" href="#">Facebook</a>
+              </div>
+            </aside>
+            <main>
+              <section class="travel">
+                <div class="travel__inner">
+                  <div class="travel__img cover-slide">
+                    <img class="img-zoom" src="<%= require('./images/image-find.jpeg') %>" alt="" />
+                  </div>
+                  <div class="travel__texts appear left">
+                    <div class="travel__text-inner">
+                      <div class="travel__title main-title item">
+                        <span class="purple">Find</span>
+                        <span>Yur own place</span>
+                      </div>
+                      <div class="travel__sub sub-title item">あなただけの場所がここに</div>
+                      <div class="travel__description item">
+                        <p>世界10ヶ国以上で展開中の「つながり」をテーマにしたカフェです</p>
+                        <p>あなたの望む場所がきっと見つかります。</p>
+                      </div>
+                      <div class="travel__btn item">
+                        <button class="btn filled">もっと詳しく</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- <section class="houses">
+                <div>
+                  <h2 class="main-title tween-animate-title">Find Your Menu</h2>
+                  <p class="sub-title tween-animate-title">
+                    あなただけのお気に入りのメニューを探しましょう
+                  </p>
+                </div>
+                <div class="houses__inner">
+                  <div class="houses__item">
+                    <div class="cover-slide hover-darken">
+                      <div
+                        class="bg-img-zoom img-bg50"
+                        style="background-image: url(./images/menu-1.jpeg)"
+                      ></div>
+                    </div>
+                    <p class="houses__title">Menu 1</p>
+                  </div>
+                  <div class="houses__item">
+                    <div class="cover-slide hover-darken">
+                      <div
+                        class="bg-img-zoom img-bg50"
+                        style="background-image: url(./images/menu-2.jpeg)"
+                      ></div>
+                    </div>
+                    <p class="houses__title">Menu 2</p>
+                  </div>
+                  <div class="houses__item">
+                    <div class="cover-slide hover-darken">
+                      <div
+                        class="bg-img-zoom img-bg50"
+                        style="background-image: url(./images/menu-3.jpeg)"
+                      ></div>
+                    </div>
+                    <p class="houses__title">Menu 3</p>
+                  </div>
+                  <div class="houses__item">
+                    <div class="cover-slide hover-darken">
+                      <div
+                        class="bg-img-zoom img-bg50"
+                        style="<=% 'background-image: url' require('./images/menu-4.jpeg') %>"
+                      ></div>
+                    </div>
+                    <p class="houses__title">Menu 4</p>
+                  </div>
+                  <div class="houses__item">
+                    <div class="cover-slide hover-darken">
+                      <div
+                        class="bg-img-zoom img-bg50"
+                        style="background-image: url(./images/menu-5.jpeg)"
+                      ></div>
+                    </div>
+                    <p class="houses__title">Menu 5</p>
+                  </div>
+                  <div class="houses__item">
+                    <div class="cover-slide hover-darken">
+                      <div
+                        class="bg-img-zoom img-bg50"
+                        style="background-image: url(./images/menu-6.jpeg)"
+                      ></div>
+                    </div>
+                    <p class="houses__title">Menu 6</p>
+                  </div>
+                  <div class="houses__btn appear up">
+                    <button class="btn slide-bg item">もっと詳しく</button>
+                  </div>
+                </div>
+              </section> -->
+              <section class="popular">
+                <div class="popular__header">
+                  <h2 class="main-title tween-animate-title">SHOP SEARCH</h2>
+                  <p class="sub-title tween-animate-title">
+                    「つながり」をテーマに、ヒト・モノ・コトが出会う場所。
+                  </p>
+                </div>
+                <div class="popular__inner appear up">
+                  <div class="popular__container">
+                    <div class="popular__item item">
+                      <div class="popular__img">
+                        <img src="<%= require('./images/image-p1.jpeg') %>" alt="" />
+                      </div>
+                      <p class="popular__title">パリ</p>
+                    </div>
+                    <div class="popular__item item">
+                      <div class="popular__img">
+                        <img src="<%= require('./images/image-p2.jpeg') %>" alt="" />
+                      </div>
+                      <p class="popular__title">ニューヨーク</p>
+                    </div>
+                    <div class="popular__item item">
+                      <div class="popular__img">
+                        <img src="<%= require('./images/image-p3.jpeg') %>" alt="" />
+                      </div>
+                      <p class="popular__title">台湾</p>
+                    </div>
+                    <div class="popular__item item">
+                      <div class="popular__img">
+                        <img src="<%= require('./images/image-p4.jpeg') %>" alt="" />
+                      </div>
+                      <p class="popular__title">東京</p>
+                    </div>
+                    <div class="popular__btn appear up">
+                      <button class="btn cover-3d item">
+                        <span>店舗を探す</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </main>
+            <aside class="side right">
+              <div class="side__inner">
+                <span>&copy;COOMA Cafe</span>
+              </div>
+            </aside>
+          </div>
+        </div>
+        <footer class="footer appear">
+          <div class="logo item">
+            <img class="logo__img" src="<%= require('./images/logo.png') %>" alt="" />
+          </div>
+          <nav class="footer__nav">
+            <ul class="footer__ul">
+              <li class="footer__li item"><a href="#">Concept</a></li>
+              <li class="footer__li item"><a href="#">Menu</a></li>
+              <li class="footer__li item"><a href="#">Access</a></li>
+            </ul>
+            <div class="footer__copyright item">&copy;COOMA Cafe</div>
+          </nav>
+        </footer>
+      </div>
+      <nav class="mobile-menu">
+        <ul class="mobile-menu__main">
+          <div class="logo">
+            <img class="logo__img" src="<%= require('./images/logo.png') %>" alt="" />
+          </div>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="">
+              <span class="main-title">Our Concept</span>
+              <span class="sub-title">当店のコンセプト</span>
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="">
+              <span class="main-title">About Menu</span>
+              <span class="sub-title">メニューについて</span>
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="">
+              <span class="main-title">How to access</span>
+              <span class="sub-title">アクセス方法</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- <script src="scripts/vendors/swiper.min.js"></script>
+    <script src="scripts/vendors/TweenMax.min.js"></script>
+    <script src="scripts/vendors/scroll-polyfill.js"></script>
+    <script src="scripts/libs/scroll.js"></script>
+    <script src="scripts/libs/text-animation.js"></script>
+    <script src="scripts/libs/hero-slider.js"></script>
+    <script src="scripts/libs/mobile-menu.js"></script>
+    <script src="scripts/main.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,13 @@
+import '../styles/vendors/bootstrap-reboot.css';
+import '../styles/vendors/swiper.min.css';
+import '../styles/style.scss'
+import '../styles/loader.scss'
+import '../scripts/vendors/pace'
+import '../scripts/vendors/scroll-polyfill'
+import '../scripts/vendors/swiper.min.js'
+import '../scripts/vendors/TweenMax.min.js'
+import '../scripts/libs/mobile-menu'
+import '../scripts/libs/hero-slider'
+import '../scripts/libs/scroll'
+import '../scripts/libs/text-animation'
+import '../scripts/main'

@@ -1,0 +1,84 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+
+.font-sm {
+  font-size: 16px;
+}
+
+.font-md {
+  font-size: 18px;
+}
+
+.font-lr {
+  font-size: 24px;
+}
+
+.font-lg {
+  font-size: 32px;
+}
+
+.mb-lg {
+  margin-bottom: 150px !important;
+}
+
+.pb-lg {
+  padding-bottom: 150px !important;
+}
+
+.header {
+  &__nav {
+    display: block;
+  }
+  &__ul {
+    display: flex;
+  }
+}
+
+.mobile-menu__btn {
+  display: none;
+}
+
+.travel {
+  &__img {
+    height: 400px;
+  }
+  &__description {
+    margin-bottom: 40px;
+  }
+  &__title {
+    &::before {
+      display: block;
+    }
+  }
+}
+
+.houses {
+  &__inner {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+
+.popular {
+  &__container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__item {
+    margin-bottom: 60px;
+    flex-basis: calc(100% / 4);
+  }
+  &__img {
+    height: 335px;
+  }
+}
+
+.swiper-slide {
+  box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
+}

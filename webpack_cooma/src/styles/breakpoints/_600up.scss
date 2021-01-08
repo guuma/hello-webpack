@@ -1,0 +1,50 @@
+/******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+
+.flex {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.travel {
+  &__inner {
+    padding: 50px;
+    flex-direction: row;
+  }
+  &__texts,
+  &__img {
+    flex-basis: 47%;
+  }
+  &__texts {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.houses {
+  &__item {
+    flex-basis: 47%;
+    margin-bottom: 60px;
+  }
+}
+
+.popular {
+  &__container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__item {
+    flex-basis: 47%;
+  }
+}
+
+.footer {
+  &__li {
+    margin-left: 0;
+    margin-right: 30px;
+  }
+}
